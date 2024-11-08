@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Mobile Usage Control</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Preview.png" alt="Logo" />
+                </a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search..." />
+                <button><i class='bx bx-search'></i></button>
+            </div>
+            <!-- Menu Icon for Nav Links -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
+            </div>
+            <!-- Nav Links hidden by default -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <!-- API Access Icon -->
+            <div class="api-access" onclick="accessAPI()">
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Section -->
+    <section class="main">
+        <div class="hero">
+            <h1>Control Your Child's Mobile Usage</h1>
+            <p>Monitor and control what your child watches on YouTube, Instagram, and more.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM2QZ6DKxCknHMUkOUx5nctv2YJu-8sPT__g&s" alt="YouTube">
+                <h3>YouTube Activity Tracking</h3>
+                <p>Track time spent on educational videos, reels, and gaming content.</p>
+            </div>
+            <div class="feature">
+                <img src="https://img.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.jpg" alt="Instagram">
+                <h3>Instagram Usage Control</h3>
+                <p>Monitor and limit Instagram usage for better focus.</p>
+            </div>
+            <div class="feature">
+                <img src="https://media.istockphoto.com/id/1491754746/vector/business-growth-chart-logo-with-arrow-bar-and-line-chart-diagram.jpg?s=612x612&w=0&k=20&c=kfZKV3WUirRRb_dEbda8mUmbTQmgiPdApeTwRDwt1ew=" alt="Graph">
+                <h3>Graphs and Reports</h3>
+                <p>Analyze your child's mobile activity with easy-to-read graphs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Child Control App Developed By Code Champ. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

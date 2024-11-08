@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Child Mobile Usage Control</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Preview.png" alt="Logo" />
+                </a>
+            </div>
+            <!-- Enhanced Search Box -->
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search activities..." oninput="performSearch()" />
+                <button><i class='bx bx-search'></i></button>
+            </div>
+            <!-- Menu Icon for Nav Links -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class='bx bx-menu'></i>
+            </div>
+            <!-- Nav Links hidden by default -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+            <!-- API Access Icon -->
+            <div class="api-access" onclick="accessAPI()">
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard">
+        <h1>Welcome!</h1>
+
+        <div class="dashboard-content">
+            <!-- Data Cards Section (Left Side) -->
+            <div class="data-cards" id="data-cards">
+                <div class="card">
+                    <h3>YouTube Activity</h3>
+                    <div class="card-details">
+                        <p id="youtube-education">Education: 120 minutes</p>
+                        <p id="youtube-reels">Reels: 60 minutes</p>
+                        <p id="youtube-gaming">Gaming: 180 minutes</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Instagram Activity</h3>
+                    <div class="card-details">
+                        <p id="instagram-education">Education: 100 minutes</p>
+                        <p id="instagram-reels">Reels: 150 minutes</p>
+                        <p id="instagram-gaming">Gaming: 200 minutes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chart Section (Right Side) -->
+            <div class="chart-container">
+                <canvas id="activity-chart" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>2024 Child Control App Developed By Code Champ. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
